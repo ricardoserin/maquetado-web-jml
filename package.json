@@ -27,7 +27,7 @@
   "scripts": {
     "dev": "npx webpack --mode development",
     "build": "npx webpack --mode production",
-    "build:ghpages": "webpack --config webpack.config.prod.js",
+    "build:gh-pages": "webpack --config webpack.config.prod.js",
     "start:dev": "webpack serve --config webpack.config.dev.js"
   },
   "repository": {
