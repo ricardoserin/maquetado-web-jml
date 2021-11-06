@@ -12,8 +12,8 @@
   transition-duration: 500ms;
   z-index: 99;
   background-color: $cl-primary;
-  &__nav{
-    @media screen and (max-width: $breakpoint-desktop){
+  &__nav {
+    @media screen and (max-width: $breakpoint-desktop) {
       display: none;
     }
     &-control {
@@ -29,7 +29,7 @@
       cursor: pointer;
       &-container {
         display: none;
-        @media screen and (max-width: $breakpoint-desktop){
+        @media screen and (max-width: $breakpoint-desktop) {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -47,7 +47,7 @@
       
     }
     &--opened {
-      @media screen and (max-width: $breakpoint-desktop){
+      @media screen and (max-width: $breakpoint-desktop) {
         display: flex;
         position: absolute;
         top: $headerHeight;
@@ -63,7 +63,7 @@
       
     }
   }
-  @media screen and (max-width: $breakpoint-desktop){
+  @media screen and (max-width: $breakpoint-desktop) {
     justify-content: center;
   }
 }

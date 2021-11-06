@@ -30,6 +30,7 @@
   top: 0;
   margin-top: -$headerHeight;
 }
+
 .link {
   text-decoration: none;
   color: $cl-black;
@@ -60,29 +61,29 @@
 
 // Componentes
 @import "./components/logo.scss";
-@import "./components/dropdown.scss";
-@import "./components/session-controls.scss";
+// @import "./components/dropdown.scss";
+// @import "./components/session-controls.scss";
 @import "./components/header.scss";
 @import "./components/section.scss";
-@import "./components/presentation.scss";
-@import "./components/title.scss";
-@import "./components/benefits.scss";
-@import "./components/accordion.scss";
-@import "./components/modules.scss";
-@import "./components/module-abstract.scss";
-@import "./components/storie.scss";
-@import "./components/customer-stories.scss";
-@import "./components/faqs.scss";
-@import "./components/author-presentation.scss";
-@import "./components/social-card.scss";
-@import "./components/social-media.scss";
-@import "./components/contact-form.scss";
-@import "./components/form.scss";
+// @import "./components/presentation.scss";
+// @import "./components/title.scss";
+// @import "./components/benefits.scss";
+// @import "./components/accordion.scss";
+// @import "./components/modules.scss";
+// @import "./components/module-abstract.scss";
+// @import "./components/storie.scss";
+// @import "./components/customer-stories.scss";
+// @import "./components/faqs.scss";
+// @import "./components/author-presentation.scss";
+// @import "./components/social-card.scss";
+// @import "./components/social-media.scss";
+// @import "./components/contact-form.scss";
+// @import "./components/form.scss";
 @import "./components/footer.scss";
-@import "./components/course-view.scss";
-@import "./components/user-review.scss";
-@import "./components/stars.scss";
-@import "./components/profile-menu.scss";
+// @import "./components/course-view.scss";
+// @import "./components/user-review.scss";
+// @import "./components/stars.scss";
+// @import "./components/profile-menu.scss";
 @import "./components/nav.scss";
 @import "./components/texticon.scss";
 @import "./components/icon.scss";
@@ -93,6 +94,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
 main {
   overflow-x: hidden;
 }
