@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  min-height: calc(100vh - #{$headerHeight});
+  align-items: center;
+  justify-content: center;
+
+  &--contact {
+    background-image: url("/src/assets/img/background-contact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

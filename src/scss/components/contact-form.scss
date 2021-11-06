@@ -1,0 +1,32 @@
+.contact-form {
+  background-image: url('../assets/img/contacto.png');
+  background-size: cover;
+  flex-direction: column;
+  color: $cl-white;
+  &__title {
+    font-size: 1.3rem;
+  }
+  &__message {
+    font-size: 1.3rem;
+    width: 60%;
+    text-align: center;
+  }
+  &__form {
+    width: 35%;
+    min-width: 25rem;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 2rem 2rem;
+    &__title {
+      text-align: center;
+    }
+    &__message {
+      width: 100%;
+    }
+    &__form {
+      width: 100%;
+      box-sizing: border-box;
+      min-width: 0;
+    }
+  }
+}

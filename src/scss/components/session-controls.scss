@@ -1,0 +1,33 @@
+.session-controls {
+  display: flex;
+  justify-content: space-between;
+  &__login {
+    font-weight: bold;
+    width: 49%;
+    font-size: 1.2rem;
+  }
+  &__register {
+    background-color: $cl-black;
+    color: $cl-white;
+    border-width: 2px;
+    width: 49%;
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    &__login, &__register {
+      font-size: 2rem;
+      margin: .5rem 0;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 90%;
+    &__login, &__register {
+      font-size: 1.2rem;
+    }
+  }
+}

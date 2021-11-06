@@ -1,0 +1,130 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 4rem;
+  min-height: 20rem;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 0;
+  background-color: $cl-softGray;
+  &__main {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__block {
+    margin: 0;
+    width: 30%;
+    &-title {
+      text-align: left;
+      margin: 0;
+    }
+    &-content {
+      display: flex;
+      flex-direction: column;
+      &-icons {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0;
+        & .icon {
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 15rem;
+  }
+  &__foot {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    min-height: 20rem;
+    max-height: 20rem;
+    background-image: url('/src/assets/img/footer-background.png');
+    background-size: cover;
+    background-position: center;
+  }
+  &__copy {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  &__legal {
+    font-size: 1.2rem;
+    color: $cl-red;
+  }
+  &__link {
+    color: $cl-red;
+  }
+  &__social-media {
+    display: flex;
+    flex-direction: column;
+  }
+  &__social-logos {
+    display: flex;
+    align-self: flex-end;
+  }
+  &__social-logo {
+    font-size: 1.8rem;
+    color: $cl-white;
+    background-color: $cl-black;
+    width: 2.8rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 .3rem;
+    transition-duration: 250ms;
+    cursor: pointer;
+    &:hover {
+      color: $cl-black;
+      background-color: $cl-white;
+    }
+  }
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 3rem 2rem 0 2rem;
+    &__contact {
+      width: 100%;
+      align-items: center;
+      &-title {
+        text-align: center;
+        font-size: 1.4rem;
+      }
+      &-media {
+        & p {
+          text-align: center;
+        }
+      }
+    }
+    &__social-message {
+      font-weight: 100;
+      text-align: center;
+    }
+    &__social-media {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+    &__social-logos {
+      align-self: center;
+    }
+    &__foot {
+      flex-direction: column;
+    }
+    &__copy, &__legal {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
