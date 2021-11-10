@@ -7,10 +7,13 @@
   align-self: flex-start;
   justify-self: flex-start;
   margin: 0 1rem;
+  transition-duration: 250ms;
   &__cord {
     background-color: $cl-softGray;
     width: 5px;
-    height: 4rem;
+    height: 10rem;
+    margin-top: -5rem;
+    z-index: -1;
   }
   &__title {
     border: solid 3px $cl-softGray;
@@ -18,8 +21,14 @@
     padding: 1rem 3rem;
     color: $cl-softGray;
     text-align: center;
+    cursor: default;
     & > * {
       margin: 0 auto;
     }
+  }
+  &:hover {
+    z-index: 10;
+    transform: scale(1.2) rotate(4deg) scaleZ(1.5) translateY(1rem);
+    background-color: $cl-white;
   }
 }
