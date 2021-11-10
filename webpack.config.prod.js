@@ -14,18 +14,18 @@ const entryNames = (() => {
   const files = glob.sync('./src/js/*.js');
   const entries = files.reduce((acc, filepath) => {
     const fileName = filepath.slice(filepath.lastIndexOf('/') + 1).split('.')[0];
-    return { ...acc,  [fileName]: filepath }
+    return { ...acc, [fileName]: filepath }
   }, {});
   return entries;
 })();
 
 const htmlEntries = Object.keys(entryNames).map((key) => {
   return new HtmlWebpackPlugin({
-      inject: true,
-      template: `./src/${key}.html`,
-      filename: `./${key}.html`,
-      scriptLoading: 'defer',
-      dependsOn: 'shared',
+    inject: true,
+    template: `./src/${key}.html`,
+    filename: `./${key}.html`,
+    scriptLoading: 'defer',
+    dependsOn: 'shared',
   })
 })
 
@@ -76,6 +76,19 @@ module.exports = {
             name: '[name].[contentHash].[ext]',
             outputPath: './assets/fonts',
             publicPath: '../assets/fonts',
+            esModule: false,
+          }
+        }
+      },
+      {
+        test: /\.(png)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            name: '[name].[contentHash].[ext]',
+            outputPath: './assets/img',
+            publicPath: '../assets/img',
             esModule: false,
           }
         }
