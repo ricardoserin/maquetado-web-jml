@@ -11,9 +11,9 @@
   align-items: center;
   transition-duration: 500ms;
   z-index: 99;
-  background-color: $cl-primary;
-  &__nav {
-    @media screen and (max-width: $breakpoint-desktop) {
+  background-color: $cl-red;
+  &__nav{
+    @media screen and (max-width: $breakpoint-desktop){
       display: none;
     }
     &-control {
@@ -24,8 +24,7 @@
       width: 2rem;
       background-color: transparent;
       outline: none;
-      border: 2px solid white;
-      border-radius: .25rem;
+      border: none;
       cursor: pointer;
       &-container {
         display: none;
@@ -40,8 +39,8 @@
           width: 3rem;
         }
       }
-      &-icon {
-        color: white;
+      &-icon{
+        color: $cl-white;
         font-size: 1.25rem;
       }
       
@@ -53,7 +52,7 @@
         top: $headerHeight;
         min-height: calc(100vh - 100px - 24rem);
         height: calc(100vh - 100px - 24rem);
-        background-color: $cl-primary;
+        background-color: $cl-red;
         width: 100%;
         & .nav__items {
           display: flex;

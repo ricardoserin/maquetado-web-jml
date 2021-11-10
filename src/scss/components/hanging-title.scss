@@ -1,0 +1,25 @@
+.hanging-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  max-width: 50rem;
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin: 0 1rem;
+  &__cord {
+    background-color: $cl-softGray;
+    width: 5px;
+    height: 4rem;
+  }
+  &__title {
+    border: solid 3px $cl-softGray;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    color: $cl-softGray;
+    text-align: center;
+    & > * {
+      margin: 0 auto;
+    }
+  }
+}

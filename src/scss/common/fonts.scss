@@ -1,29 +1,148 @@
 @font-face {
-  font-family: 'AvenirNextLTPro';
-  src: url('../assets/fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
-       url('../assets/fonts/AvenirNextLTPro-Bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-BLACK.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-BLACK.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
-
 }
 
 @font-face {
-  font-family: 'AvenirNextLTPro Demi';
-  src: url('../assets/fonts/AvenirNextLTPro-Demi.woff2') format('woff2'),
-       url('../assets/fonts/AvenirNextLTPro-Demi.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-BOLD.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-BOLD.woff') format('woff');
+  font-weight: 800;
   font-style: normal;
 }
-
 
 @font-face {
-  font-family: 'AvenirNextLTPro';
-  src: url('../assets/fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
-       url('../assets/fonts/AvenirNextLTPro-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-EXTRABOLD.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-EXTRABOLD.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
-
 }
 
-$avenirPro: 'AvenirNextLtPro', Arial, sans-serif;
-$avenirDemi: 'AvenirNextLtPro Demi', Arial, sans-serif;
+@font-face {
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-EXTRALIGHT.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-EXTRALIGHT.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-LIGHT.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-LIGHT.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-MEDIUM.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-MEDIUM.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-REGULAR.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-REGULAR.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-SEMIBOLD.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-SEMIBOLD.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Robotos Lab';
+  src: url('../assets/fonts/ROBOTOSLAB-THIN.woff2') format('woff2'),
+       url('../assets/fonts/ROBOTOSLAB-THIN.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Source Sans
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-Black.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-Black.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-Bold.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-BoldIt.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-BoldIt.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-ExtraLight.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-ExtraLight.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-Light.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-It.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-It.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-Regular.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-Semibold.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-Semibold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Roman';
+  src: url('../assets/fonts/SourceSans3-SemiboldIt.woff2') format('woff2'),
+       url('../assets/fonts/SourceSans3-SemiboldIt.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+$RobotosLab: 'Robotos Lab', Arial, sans-serif;
+$SourceSans3: 'Source Sans Roman', Arial, sans-serif;

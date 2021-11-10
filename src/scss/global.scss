@@ -5,8 +5,17 @@
 @import "./common/sizes.scss";
 
 // Estilos comunes
+body {
+  font-family: $RobotosLab;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+main {
+  overflow-x: hidden;
+}
+
 .image {
-  position: absolute;
   position: absolute;
   object-fit: contain;
   object-position: center;
@@ -43,58 +52,17 @@
   }
 }
 
-.button {
-  background-color: $cl-yellow;
-  font-family: inherit;
-  padding: .5rem .5rem;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition-duration: 200ms;
-  min-width: 7rem;
-  border: 1px solid $cl-yellow;
-  &:hover {
-    background-color: $cl-yellow-hover;
-    border-color: $cl-yellow-hover;
-  }
-}
-
 // Componentes
-@import "./components/logo.scss";
-// @import "./components/dropdown.scss";
-// @import "./components/session-controls.scss";
-@import "./components/header.scss";
+@import "./components/button.scss";
 @import "./components/section.scss";
-// @import "./components/presentation.scss";
-// @import "./components/title.scss";
-// @import "./components/benefits.scss";
-// @import "./components/accordion.scss";
-// @import "./components/modules.scss";
-// @import "./components/module-abstract.scss";
-// @import "./components/storie.scss";
-// @import "./components/customer-stories.scss";
-// @import "./components/faqs.scss";
-// @import "./components/author-presentation.scss";
-// @import "./components/social-card.scss";
-// @import "./components/social-media.scss";
-// @import "./components/contact-form.scss";
-// @import "./components/form.scss";
+@import "./components/header.scss";
 @import "./components/footer.scss";
-// @import "./components/course-view.scss";
-// @import "./components/user-review.scss";
-// @import "./components/stars.scss";
-// @import "./components/profile-menu.scss";
 @import "./components/nav.scss";
-@import "./components/texticon.scss";
+@import "./components/logo.scss";
 @import "./components/icon.scss";
+@import "./components/texticon.scss";
+@import "./components/carousel.scss";
+@import "./components/cover.scss";
+@import "./components/user-intro.scss";
+@import "./components/hanging-title.scss";
 
-body {
-  font-family: $avenirPro;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-main {
-  overflow-x: hidden;
-}

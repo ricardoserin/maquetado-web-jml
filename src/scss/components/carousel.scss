@@ -1,0 +1,35 @@
+.carousel {
+  &__image {
+    max-width: 10rem;
+    overflow: hidden;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__control {
+    width: .6rem;
+    height: .6rem;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: solid 2px $cl-red;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      background-color: $cl-red;
+    }
+    &--active {
+      background-color: $cl-red;
+    }
+  }
+  &__control-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 1rem 0;
+    gap: .2rem;
+  }
+}

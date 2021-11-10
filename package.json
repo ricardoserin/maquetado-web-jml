@@ -25,10 +25,10 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "dev": "npx webpack --mode development",
+    "build:dev": "npx webpack --mode development",
     "build": "npx webpack --mode production",
-    "build:gh-pages": "webpack --config webpack.config.prod.js",
-    "start:dev": "webpack serve --config webpack.config.dev.js"
+    "build:ghpages": "webpack --config webpack.config.prod.js",
+    "dev": "webpack serve --config webpack.config.dev.js"
   },
   "repository": {
     "type": "git",

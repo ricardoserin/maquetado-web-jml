@@ -1,0 +1,30 @@
+.cover {
+  width: 100%;
+  height: calc(82vh - #{$headerHeight});;
+  background: $gradient-black;
+  &__bg-image {
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    height: 100%;
+  }
+  &__button {
+    font-size: 1.5rem;
+  }
+  &__message {
+    font-size: 2.5rem;
+    font-family: $RobotosLab;
+    font-weight: 900;
+    color: $cl-white;
+    text-align: end;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 1.5rem;
+    }
+  }
+  &__call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+  }
+}
