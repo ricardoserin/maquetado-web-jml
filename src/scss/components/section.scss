@@ -1,12 +1,16 @@
 .section {
+  position: relative;
   display: flex;
-  min-height: calc(100vh - #{$headerHeight});
+  height: calc(100vh - #{$headerHeight});
+  min-height: 25rem;
   align-items: center;
   justify-content: center;
-
-  &--contact {
-    background-image: url("/src/assets/img/background-contact.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  overflow: hidden;
+  min-width: 100vw;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    width: 100%;
+    padding: 1rem;
   }
 }

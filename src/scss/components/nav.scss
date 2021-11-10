@@ -1,4 +1,5 @@
 .nav{
+    font-family: $RobotosLab;
     &__items{
         display: flex;
         flex-direction: row;
@@ -19,6 +20,8 @@
         height: 3.5rem;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
+        border: 2px solid transparent;
         &:hover {
             border: 2px solid white;
             border-radius: 1rem;
