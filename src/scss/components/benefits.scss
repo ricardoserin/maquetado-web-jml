@@ -28,8 +28,15 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem 3rem;
+    &:hover .benefits__element-description {
+      transform: scale(1.5);
+    }
+    &:hover .benefits__image {
+      transform: scale(1.5) rotate(360deg);
+    }
   }
   &__image {
+    transition-duration: 500ms;
     position: relative;
     max-width: 20rem;
     width: 6rem;
@@ -37,6 +44,7 @@
     overflow: hidden;
   }
   &__element-description {
+    transition-duration: 500ms;
     display: flex;
     font-size: 1.2rem;
     text-align: center;
