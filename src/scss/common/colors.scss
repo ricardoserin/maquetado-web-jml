@@ -1,13 +1,19 @@
 $cl-yellow-hover: #f5d33b;
-$cl-yellow: #F5AD3B; 
-$cl-darkGray: #4D4D4D;
+$cl-yellow: #f5ad3b;
+$cl-darkGray: #4d4d4d;
 $cl-gray: #666666;
-$cl-grayText: #4E4D4D;
+$cl-grayText: #4e4d4d;
 $cl-softGray: #888888;
-$cl-success: #43AD4B;
-$cl-white: #FFFFFF;
+$cl-grayBackground: #e1e1e1;
+$cl-success: #43ad4b;
+$cl-white: #ffffff;
 $cl-black: #333333;
-$cl-gray-benefits: #E6E6E6;
+$cl-gray-benefits: #e6e6e6;
 $cl-grayStar: #747474;
-$cl-red: #FF3333;
-$gradient-black: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(253,29,29,0) 50%, rgba(252,176,69,0) 100%);
+$cl-red: #ff3333;
+$gradient-black: linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(253, 29, 29, 0) 50%,
+  rgba(252, 176, 69, 0) 100%
+);

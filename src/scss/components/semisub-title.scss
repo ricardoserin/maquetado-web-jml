@@ -1,0 +1,26 @@
+.semisub-title {
+  &__title {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      bottom: -10px;
+      height: 100%;
+      width: 80%; /* or 100px */
+      border-bottom: solid 4px transparent;
+      border-image: url("../assets/img/semidashed.png") 1 round;
+    }
+    & > * {
+      margin: 0.5rem auto;
+      font-family: $RobotosLab;
+      text-align: center;
+      font-weight: 900;
+      padding: 0;
+    }
+  }
+}
