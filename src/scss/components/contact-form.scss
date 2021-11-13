@@ -19,6 +19,18 @@
     &--radio .contact-form__label {
       display: inline-block;
     }
+    &--black .contact-form {
+      &__input {
+        background-color: $cl-black;
+        color: $cl-white;
+        &::placeholder {
+          color: $cl-white;
+        }
+        &:disabled {
+          cursor: default;
+        }
+      }
+    }
   }
   &__label {
     display: none;
@@ -38,5 +50,8 @@
   &__button {
     margin: 0 auto;
     min-width: 10rem;
+  }
+  &__instructions {
+    text-align: center;
   }
 }
