@@ -1,12 +1,17 @@
 .cover {
   width: 100%;
-  height: calc(82vh - #{$headerHeight});;
+  height: calc(82vh - #{$headerHeight});
   background: $gradient-black;
   padding: 2rem;
+  box-sizing: border-box;
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 1rem 0;
+  }
   &__bg-image {
     width: 100%;
     z-index: -1;
     object-fit: cover;
+    object-position: center;
     height: 100%;
   }
   &__button {

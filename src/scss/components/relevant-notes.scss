@@ -1,13 +1,14 @@
-.rated-properties {
+.relevant-notes {
   padding: 3rem 0;
   min-height: 0;
+  background-color: $cl-grayBackground;
   &__title {
     width: 25%;
     min-width: 8rem;
     min-height: 5rem;
     margin-bottom: 2rem;
   }
-  &__propertie-container {
+  &__relevant-note-container {
     width: 100%;
     display: flex;
     justify-content: center;
