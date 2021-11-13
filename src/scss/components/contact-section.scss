@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url("../assets/img/tree.png") bottom left / 4% no-repeat,
+    url("../assets/img/figures.png") top left / 14% no-repeat,
+    url("../assets/img/tree-reverse.png") bottom right / 4% no-repeat,
+    url("../assets/img/figures-reverse.png") top right / 14% no-repeat;
+  &__contact-form {
+    width: 50%;
+    min-width: 15rem;
+    margin: 0 auto;
+    @media screen and (max-width: $breakpoint-tablet) {
+      width: 90%;
+    }
+  }
+  &__title {
+    width: 20%;
+    min-width: 20rem;
+  }
+}

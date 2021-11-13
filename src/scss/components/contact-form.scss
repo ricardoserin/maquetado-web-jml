@@ -1,0 +1,42 @@
+.contact-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-family: $SourceSans3;
+  gap: 1rem;
+  &__element {
+    width: 100%;
+    display: inline-flex;
+    &--mid {
+      width: 48%;
+      @media screen and (max-width: $breakpoint-tablet) {
+        width: 100%;
+      }
+    }
+    &--radio .contact-form__label {
+      display: inline-block;
+    }
+  }
+  &__label {
+    display: none;
+    color: $cl-black;
+  }
+  &__input {
+    width: 100%;
+    padding: 0.8rem 0.8rem;
+    border-radius: 10px;
+    border: solid 1px $cl-black;
+    &::placeholder {
+      font-size: 1rem;
+      font-family: $SourceSans3;
+      color: $cl-black;
+    }
+  }
+  &__button {
+    margin: 0 auto;
+    min-width: 10rem;
+  }
+}
