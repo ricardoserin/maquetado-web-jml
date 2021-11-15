@@ -1,0 +1,43 @@
+.about-us {
+  display: grid;
+  min-height: 0;
+  max-width: calc(0.8 * 1920px);
+  min-width: 0;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-areas:
+    "title title"
+    "body image";
+  @media screen and (max-width: $breakpoint-tablet) {
+    margin: 2rem 0;
+  }
+  &__title {
+    grid-area: title;
+    width: 25rem;
+    margin: 0;
+
+    font-size: 1.8rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+      font-size: 1.2rem;
+      width: auto;
+      margin-bottom: 1rem;
+    }
+  }
+  &__body {
+    padding: 0 1rem;
+    box-sizing: border-box;
+    font-family: $SourceSans3;
+    grid-area: body;
+    text-align: justify;
+  }
+  &__image {
+    grid-area: image;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: none;
+    }
+  }
+}
