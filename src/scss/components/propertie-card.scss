@@ -1,0 +1,98 @@
+.propertie-card {
+  width: 100%;
+  display: flex;
+  min-height: 15rem;
+  overflow: hidden;
+  border: solid 1px $cl-black;
+  box-sizing: border-box;
+  border-radius: 15px;
+  @media screen and (max-width: $breakpoint-laptop) {
+    flex-direction: column;
+    height: auto;
+  }
+  &__slider {
+    position: relative;
+    max-width: 30rem;
+    width: 40%;
+    min-width: 20rem;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    @media screen and (max-width: $breakpoint-laptop) {
+      width: 100%;
+      max-width: none;
+      min-width: none;
+    }
+    &-control {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 2rem;
+      background-color: rgba(0, 0, 0, 0.568);
+      border: none;
+      z-index: 1;
+      padding: 0;
+      box-sizing: border-box;
+      &--left {
+        left: 0;
+      }
+      &--right {
+        right: 0;
+      }
+    }
+  }
+  &__picture {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+    min-height: 15rem;
+    width: 100%;
+    & .image > img {
+      object-fit: cover;
+    }
+  }
+  &__attributes {
+    padding: 1rem 2rem;
+    font-family: $SourceSans3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  &__button {
+    align-self: flex-end;
+  }
+  &__price {
+    font-size: 1.8rem;
+  }
+  &__secondary-price {
+    color: $cl-placeholder;
+    font-size: 1.2rem;
+  }
+  &__details {
+    color: $cl-placeholder;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: $breakpoint-tablet) {
+      flex-direction: column;
+      margin: 1rem 0;
+    }
+  }
+  &__detail-item {
+    display: inline-block;
+  }
+  &__body {
+    margin: 1rem 0;
+  }
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  &__description {
+    margin: 0.2rem 0;
+  }
+}

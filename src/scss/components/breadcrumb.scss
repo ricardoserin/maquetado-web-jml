@@ -1,0 +1,23 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  color: $cl-placeholder;
+  &__item {
+    font-family: $SourceSans3;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+      color: $cl-black;
+      text-decoration: underline;
+    }
+    &--active {
+      font-weight: 500;
+      color: $cl-black;
+      cursor: default;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
