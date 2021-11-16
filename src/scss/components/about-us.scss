@@ -8,6 +8,7 @@
   grid-template-areas:
     "title title"
     "body image";
+  padding: 2rem 0;
   @media screen and (max-width: $breakpoint-tablet) {
     margin: 2rem 0;
   }
