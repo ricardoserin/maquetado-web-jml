@@ -14,6 +14,12 @@ main {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 .image {
   width: 0px;
   height: 0px;
@@ -87,6 +93,7 @@ main {
 
 // Componentes
 @import "./components/button.scss";
+@import "./components/accordion.scss";
 @import "./components/section.scss";
 @import "./components/header.scss";
 @import "./components/footer.scss";
@@ -95,6 +102,7 @@ main {
 @import "./components/icon.scss";
 @import "./components/texticon.scss";
 @import "./components/carousel.scss";
+@import "./components/carousel-b.scss";
 @import "./components/cover.scss";
 @import "./components/user-intro.scss";
 @import "./components/hanging-title.scss";
@@ -106,3 +114,7 @@ main {
 @import "./components/relevant-note.scss";
 @import "./components/contact-form.scss";
 @import "./components/contact-section.scss";
+@import "./components/about-us.scss";
+@import "./components/strengths.scss";
+@import "./components/team-card.scss";
+@import "./components/our-team.scss";

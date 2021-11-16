@@ -1,0 +1,38 @@
+.strengths {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  @media screen and (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &__strength {
+    border-right: 1px solid $cl-black;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: $RobotosLab;
+    @media screen and (max-width: $breakpoint-tablet) {
+      border: none;
+    }
+    &-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 0;
+      font-weight: 800;
+    }
+    &-text {
+      font-size: 0.8rem;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  &__strength:nth-last-child(1) {
+    border-right: none;
+  }
+}
