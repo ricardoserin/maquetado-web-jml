@@ -1,0 +1,16 @@
+.our-team {
+  background: $cl-grayBackground;
+  padding: 2rem 0;
+  &__carousel-b {
+    max-width: calc(0.6 * 1920px);
+  }
+  &__content {
+    font-family: $RobotosLab;
+  }
+  &__presentation {
+    text-align: center;
+    min-width: 20rem;
+    width: 60%;
+    margin: 3rem auto;
+  }
+}

@@ -1,0 +1,36 @@
+.carousel-b {
+  position: relative;
+  &__arrow {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 1rem;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $cl-white;
+    background-color: $cl-gray;
+    @media screen and (max-width: $breakpoint-tablet) {
+      top: 25%;
+      bottom: auto;
+    }
+    &:hover {
+      background-color: $cl-grayAccordion;
+    }
+    &--left {
+      left: 0;
+    }
+    &--right {
+      right: 0;
+    }
+  }
+  &__content {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
