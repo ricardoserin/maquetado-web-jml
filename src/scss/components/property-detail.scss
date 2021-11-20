@@ -2,7 +2,7 @@
     display: grid;
     min-height: 0;
     grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-template-columns: 1fr 20rem;
+    grid-template-columns: 1fr 30rem;
     grid-template-areas:
       "head head"
       "body form"
@@ -73,8 +73,16 @@
     }
     &__form {
         grid-area: form;
-        width: 20rem;
-        max-width: 20rem;
+        display: flex;
+        align-self: flex-start;
+        margin: 1rem 3rem;
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 90%;
+            justify-content: center;
+            padding: 0 3rem;
+            margin: 0;
+            align-self: initial;
+        }
     }
     &__recommendations {
         grid-area: recommendations;
