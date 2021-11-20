@@ -83,4 +83,11 @@
             margin: 0;
         }
     }
+    &__description {
+        margin: 1rem 0;
+        & > p {
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
