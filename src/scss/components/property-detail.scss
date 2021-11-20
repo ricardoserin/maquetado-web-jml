@@ -56,7 +56,7 @@
             object-fit: cover;
         }
         @media screen and (max-width: $breakpoint-tablet) {
-            display: flex;
+            display: none;
             flex-direction: row;
             width: 100%;
             & > img {
@@ -68,7 +68,7 @@
         grid-area: body;
         padding: 0 2.5rem;
         @media screen and (max-width: $breakpoint-tablet) {
-            width: 95%;
+            padding: 0 1rem;
         }
     }
     &__form {
