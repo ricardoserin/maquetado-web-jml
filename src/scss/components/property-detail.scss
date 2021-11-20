@@ -1,0 +1,90 @@
+.property-details {
+    display: grid;
+    min-height: 0;
+    grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: 1fr 30rem;
+    grid-template-areas:
+      "head head"
+      "body form"
+      "recommendations recommendations";
+    padding: 0;
+    justify-content: start;
+    @media screen and (max-width: $breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+    &__head {
+        grid-area: head;
+        display: flex;
+        flex-direction: row;
+        @media screen and (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+        }
+    }
+    &__title {
+        position: absolute;
+        top: 27rem;
+        margin-left: 2rem;
+        color: $cl-white;
+        @media screen and (max-width: $breakpoint-tablet) {
+            margin-left: 0.25rem;
+            top: 26rem;
+            & > h1 {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    &__principal-image {
+        width: 50%;
+        & > img {
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
+    }
+    &__other-images {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+        grid-template-rows: 15rem 15rem;
+        & > img {
+            height: 15rem;
+            width: 25vw;
+            object-fit: cover;
+        }
+        @media screen and (max-width: $breakpoint-tablet) {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            & > img {
+                height: auto;
+            }
+        }
+    }
+    &__body {
+        grid-area: body;
+        padding: 0 2.5rem;
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 95%;
+        }
+    }
+    &__form {
+        grid-area: form;
+        display: flex;
+        align-self: flex-start;
+        margin: 1rem 3rem;
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 90%;
+            justify-content: center;
+            padding: 0 3rem;
+            margin: 0;
+            align-self: initial;
+        }
+    }
+    &__recommendations {
+        grid-area: recommendations;
+    }
+}

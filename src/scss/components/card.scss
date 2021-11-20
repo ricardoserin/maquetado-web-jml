@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid $cl-black;
+    border-radius: 1.25rem;
+    @media screen and (max-width: $breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 1rem;
+        gap: 0.25rem;
+    }
+    &__image {
+        height: 10rem;
+        width: 10rem;
+        max-width: 10rem;
+        max-height: 10rem;
+        object-fit: cover;
+        & > img {
+            width: 10rem;
+            position: relative;
+        }
+        @media screen and (max-width: $breakpoint-tablet) {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: fit-content;
+            & > img {
+                width: 100%;
+                border-top-right-radius: 1rem;
+                border-top-left-radius: 1rem;
+            }
+        }
+        &-container {
+            
+        }
+    }
+}
