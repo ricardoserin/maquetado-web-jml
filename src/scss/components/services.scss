@@ -8,7 +8,7 @@
     grid-template-areas:
       "title"
       "body";
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     @media screen and (max-width: $breakpoint-tablet) {
       margin: 0;
     }
@@ -25,7 +25,7 @@
         }
     }
     &__body {
-        padding: 2rem 1rem;
+        padding: 2rem 0;
         box-sizing: border-box;
         font-family: $SourceSans3;
         grid-area: body;

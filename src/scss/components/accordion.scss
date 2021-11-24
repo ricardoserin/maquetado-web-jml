@@ -55,9 +55,13 @@
       display: none;
       background-color: $cl-grayAccordion;
       padding: 1rem;
+      padding-bottom: 2rem;
       font-family: $SourceSans3;
       &--opened {
         display: block;
+      }
+      & > p {
+        margin: 0;
       }
     }
   }

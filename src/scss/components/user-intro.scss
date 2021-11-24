@@ -17,7 +17,8 @@
   &__service-question {
     width: 100%;
     text-align: center;
-    color: $cl-gray;
+    font-weight: 500;
+    color: $cl-black; //$cl-gray
     border: 3px solid $cl-black;
     border-radius: 20px;
     background-color: transparent;
