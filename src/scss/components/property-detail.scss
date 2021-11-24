@@ -86,5 +86,20 @@
     }
     &__recommendations {
         grid-area: recommendations;
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 2.5rem;
+        &-title {
+            margin: 0;
+            margin-bottom: 1rem;
+            & > h1 {
+                font-weight: 500;
+            }
+        }
+        &-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+        }
     }
 }
