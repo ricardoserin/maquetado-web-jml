@@ -6,6 +6,13 @@
   border: solid 1px $cl-black;
   box-sizing: border-box;
   border-radius: 15px;
+  &--vertical {
+      flex-direction: column;
+
+      & > .propertie-card__slider{ 
+        width: auto;
+      }
+  }
   @media screen and (max-width: $breakpoint-laptop) {
     flex-direction: column;
     height: auto;
